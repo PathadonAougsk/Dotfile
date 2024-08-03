@@ -1,0 +1,32 @@
+[pyprland]
+plugins = [
+ "expose",
+ "fetch_client_menu",
+ "lost_windows",
+ "magnify",
+ "scratchpads",
+ "shift_monitors",
+ "toggle_special",
+ "workspaces_follow_focus",
+]
+
+[scratchpads.kitty]
+animation = "fromTop"
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+max_size = "1920px 100%"
+
+[scratchpads.spotify]
+animation = "fromRight"
+command = "spotify"
+class = "Spotify"
+size = "50% 50%"
+max_size = "1200px 100%"
+
+[scratchpads.firefox]
+animation = "fromLeft"
+command = "firefox"
+class = "firefox"
+size = "50% 50%"
+max_size = "1200px 100%"

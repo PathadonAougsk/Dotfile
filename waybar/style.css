@@ -1,0 +1,42 @@
+* { 
+  border : none;
+  min-height: 20px;
+}
+
+window#waybar {
+  background : rgba(247, 231, 220, 1);
+  color: white;
+  font-size: 12px;
+}
+
+#hyprland-window{
+  color: black;
+}
+
+#mode, #clock, #battery, #network {
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+#clock {
+  color: black;
+}
+
+#battery {
+  color: black;
+}
+
+#battery.bat2 {
+  color: black;
+}
+
+#temperature{
+  color: black;
+  padding: 0 10px;
+}
+
+#network{
+  color: black;
+}
+
+

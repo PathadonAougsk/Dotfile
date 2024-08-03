@@ -1,0 +1,46 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces","hyprland/window"],
+    "modules-center": ["battery#bat1"],
+    "modules-right": ["battery","battery#bat2", "clock", "temperature", "network"],
+    "sway/window": {
+        "max-length": 50
+    },
+
+    "wlr/taskbar" : {
+      "icon-size" : 20
+    },
+
+    "battery#bat1":{
+      "format": "{time}"
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+        
+    },
+
+    "battery#bat2": {
+      "bat": "BAT1",
+      "format": "{capacity}% {icon}",
+      "format-icons": ["󰂎","󰁺","󰁻","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}%"
+    },
+    
+    "temperature":{
+      "critical-threshold": 80,
+      "format": "{temperatureC}°C {icon}",
+      "format-icons": [""]
+    },
+
+    "network":{
+      "format-wifi": "{essid} ({signalStrength}%) ",
+      "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+      "format-disconnected": "Disconnected ⚠",
+      "interval" : 7
+    }
+}
